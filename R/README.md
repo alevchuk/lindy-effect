@@ -29,3 +29,11 @@ cd ~/src/R-3.6.1/
 make
 make install
 ```
+
+### Add to path
+
+Add binary path export to the end of `~/.profile` like this:
+
+```
+echo 'export PATH=$HOME/bin:$PATH' >> ~/.profile
+```
