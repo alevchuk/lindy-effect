@@ -19,7 +19,25 @@ sudo su -l r
 
 Download:
 ```
-mkdir ~/data
+mkdir ~/lindy-data
 curl https://raw.githubusercontent.com/FabioLolix/LinuxTimeline/28e13cc8f406546a701b6e5c197ee20da58b5d66/gldt.csv > gldt.csv
 ```
 
+### Download and run the experiment
+
+Change into the R user account:
+```
+sudo su -l r
+```
+
+Download script:
+```
+cd ~/lindy-data
+curl https://raw.githubusercontent.com/alevchuk/lindy-effect/master/process.R > process.R
+chmod +x process.R
+```
+
+Run experiment:
+```
+./process.R
+```
