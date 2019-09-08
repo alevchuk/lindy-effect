@@ -25,7 +25,7 @@ mkdir ~/src
 curl https://cran.r-project.org/src/base/R-3/R-3.6.1.tar.gz > ~/src/R-3.6.1.tar.gz
 
 cd ~/src/R-3.6.1/
-./configure --with-x=no --prefix=$HOME
+./configure --with-x=no --prefix=$HOME/bin
 make
 make install
 ```
@@ -35,6 +35,6 @@ make install
 Add binary path export to the end of `~/.profile` like this:
 
 ```
-echo 'export PATH=$HOME/bin:$PATH' >> ~/.profile
+echo 'export PATH=$HOME/bin/bin:$PATH' >> ~/.profile
 source ~/.profile
 ```
