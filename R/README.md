@@ -25,7 +25,7 @@ mkdir ~/src
 curl https://cran.r-project.org/src/base/R-3/R-3.6.1.tar.gz > ~/src/R-3.6.1.tar.gz
 
 cd ~/src/R-3.6.1/
-./configure --with-x=no --prefix=$HOME/bin
+./configure --with-x=no --enable-java=no --prefix=$HOME/bin
 make
 make install
 ```
