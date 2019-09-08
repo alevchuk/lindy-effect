@@ -1,6 +1,15 @@
 # lindy-effect
 Statistical testing of the [Lindy effect](https://en.wikipedia.org/wiki/Lindy_effect)
 
+
+## About the experiment
+
+We test the accuracy of the Lindy Effect on the history of Linux distributions.
+
+The source code of the experiment is here:
+[process.R](@alevchuk/lindy-effect/blob/master/process.R)
+
+
 ## Steps to reproduce
 
 ### Prerequisites
