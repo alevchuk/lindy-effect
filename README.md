@@ -19,7 +19,7 @@ The source code of the experiment is here:
 
 ### Download source data
 
-I'm using the [2019 May 4 version of FabioLolix/LinuxTimeline data](https://github.com/FabioLolix/LinuxTimeline/commit/28e13cc8f406546a701b6e5c197ee20da58b5d66)
+We're using the [2019 May 4 version of FabioLolix/LinuxTimeline data](https://github.com/FabioLolix/LinuxTimeline/commit/28e13cc8f406546a701b6e5c197ee20da58b5d66)
 
 Change into the R user account:
 ```
@@ -50,3 +50,9 @@ Run experiment:
 ```
 ./process.R
 ```
+
+## Visualization of the data
+
+This data is fatured on the Linux_distribution wikipedia atricle https://en.wikipedia.org/wiki/Linux_distribution#History
+![Linux_Distribution_Timeline](https://upload.wikimedia.org/wikipedia/commons/1/1b/Linux_Distribution_Timeline.svg)
+
