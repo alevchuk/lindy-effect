@@ -36,4 +36,5 @@ Add binary path export to the end of `~/.profile` like this:
 
 ```
 echo 'export PATH=$HOME/bin:$PATH' >> ~/.profile
+source ~/.profile
 ```
