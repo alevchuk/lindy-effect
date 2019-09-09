@@ -4,7 +4,7 @@ Statistical testing of the [Lindy effect](https://en.wikipedia.org/wiki/Lindy_ef
 
 ## About the experiment
 
-We test the accuracy of the Lindy Effect on the history of Linux distributions.
+We test the accuracy of the Lindy Effect on the history of GNU/Linux distributions.
 
 The source code of the experiment is here:
 [process.R](@alevchuk/lindy-effect/blob/master/process.R)
