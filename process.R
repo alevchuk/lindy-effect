@@ -37,7 +37,9 @@ getSurvivorsAt <- function(df, atTimePoints) {
         lapply(
                 atTimePoints,
                 function(atTimePoint) {
-                        df[df$Start < atTimePoint & (df$Stop > atTimePoint | is.na(df$Stop)),]
+                        subset <- df[df$Start < atTimePoint & (df$Stop > atTimePoint | is.na(df$Stop)),]
+                        subset$currentTime <- rep(atTimePoint, nrow(subset))
+                        subset
                 }
         )
 }
@@ -56,10 +58,27 @@ dataGoesUpTo = range(inputData$Stop, na.rm=T)[[2]]
 experimentRangeStart = range(inputData$Start, na.rm=T)[[1]]
 experimentRangeStop = experimentRangeStart + abs(difftime(experimentRangeStart, dataGoesUpTo) / 2)
 
+# Distros that survived at the time data was collected
+# are counted as dead the the end of data range.
+inputData$Stop[is.na(inputData$Stop)] <- dataGoesUpTo
+
 experimentResults <- data.frame(
-        "currentTime"=seq(experimentRangeStart, experimentRangeStop, by="month")
+        "currentTime"=seq(experimentRangeStart, experimentRangeStop, by="year")
 )
 
 survivors <- getSurvivorsAt(inputData, experimentResults$currentTime)
 experimentResults$numSurvivoursCount <- sapply(survivors, nrow)
+
+experimentResults$avgAgeInDays <- sapply(sapply(survivors, function (x) {
+        x$currentTime - x$Start
+}), mean)
+
+experimentResults$avgAgeInDays <- sapply(sapply(survivors, function (x) {
+        x$currentTime - x$Start
+}), mean)
+
+experimentResults$avgFutureLifeInDays <- sapply(sapply(survivors, function (x) {
+        x$Stop - x$currentTime
+}), mean)
+
 experimentResults
