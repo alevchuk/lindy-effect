@@ -50,4 +50,4 @@ This data is fatured on the Linux_distribution wikipedia atricle https://en.wiki
 
 # Results
 
-
+![lindy-age-life-scatter-plot](results/lindy-age-life-scatter-plot.png)
