@@ -42,9 +42,9 @@ Run experiment:
 ./process.R
 ```
 
-## Visualization of the data
+## Visualization of the input data
 
-This data is featured on the Linux_distribution wikipedia article https://en.wikipedia.org/wiki/Linux_distribution#History
+Our input data has a beautiful visualization in the *Linux_distribution* wikipedia article https://en.wikipedia.org/wiki/Linux_distribution#History
 ![Linux_Distribution_Timeline](https://upload.wikimedia.org/wikipedia/commons/1/1b/Linux_Distribution_Timeline.svg)
 
 
