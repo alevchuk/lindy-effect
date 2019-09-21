@@ -1,5 +1,5 @@
 # lindy-effect
-Statistical testing of the [Lindy effect](https://en.wikipedia.org/wiki/Lindy_effect)
+Statistical testing of the [Lindy effect](https://en.wikipedia.org/wiki/Lindy_effect) with real world data
 
 
 ## About the experiment
