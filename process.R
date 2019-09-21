@@ -4,7 +4,7 @@ inputFileLocalPath <- "lindy-gldt.csv"
 if ( ! file.exists(inputFileLocalPath) ) {
 	download.file("https://raw.githubusercontent.com/FabioLolix/LinuxTimeline/28e13cc8f406546a701b6e5c197ee20da58b5d66/gldt.csv", destfile=inputFileLocalPath)
 }
-inputData <- read.csv("gldt.csv", header=F, stringsAsFactors=F)
+inputData <- read.csv(inputFileLocalPath, header=F, stringsAsFactors=F)
 
 # name columns
 colnames(inputData) <- c('Type', 'Name', NA, 'Parent', 'Start', 'Stop')
