@@ -50,6 +50,6 @@ Our input data has a beautiful visualization in the **Linux_distribution wikiped
 
 # Results
 
-![lindy-age-life-scatter-plot](results/lindy-age-life-scatter-plot-v2.png)
+![lindy-age-life-scatter-plot](results/lindy-age-life-scatter-plot-v3.png)
 
 ![lindy-age-life-scatter-plot-oy](results/lindy-age-life-scatter-plot-oy-v2.png)
