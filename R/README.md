@@ -49,7 +49,7 @@ source ~/.profile
 
 ## To use R
 
-To use R, change into the R user account:
+Now, to use R, simply change into the R user account:
 ```
 sudo su -l r
 ```
