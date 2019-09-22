@@ -25,7 +25,7 @@ Table of contents
 
 1. [Install R 3.6.1](https://github.com/alevchuk/lindy-effect/blob/master/R/README.md)
 
-### Source data
+### Input data
 
 We're using the [2019 May 4 version of FabioLolix/LinuxTimeline data](https://github.com/FabioLolix/LinuxTimeline/commit/28e13cc8f406546a701b6e5c197ee20da58b5d66)
 
@@ -52,7 +52,7 @@ Run experiment:
 
 ## Results
 
-Using lindy effect to predict which Linux distro will live 2x of its current age
+Using lindy effect to predict which Linux distro will live 2x of its current age.
 At each time point, we take the oldest repo among survivors and bet that it will live 2x of its current age
 then we count the time points when we were correct and calculate what percentage of time we were correct.
 
