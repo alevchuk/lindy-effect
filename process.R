@@ -129,3 +129,28 @@ plot(
      ylab="Future Life (in days)",
      col=col
 )
+
+
+# At each time point, grab the oldest
+# distro among the survivors at that time,
+# and check if it will survive the double
+# of it's current age
+experimentResults$willLive2x <- (experimentResults$futureLifeInDays > experimentResults$ageInDays)
+experimentResultsForOldest <- experimentResults[
+        experimentResults$status == "oldest",
+        c("currentTime", "Name", "ageInDays", "futureLifeInDays", "willLive2x")
+      ]
+print(experimentResultsForOldest)
+
+cat("\n")
+cat("Using lindy effect to predict which Linux distro will live 2x of it's current age\n")
+cat("At each time point, we take the oldest repo among survivors and bet that it will live 2x of it's current age\n")
+cat("then we count the time points when we were correct and calculate what percentage of time we were correct.\n")
+
+correct <- sum(experimentResultsForOldest$willLive2x)
+total <- nrow(experimentResultsForOldest)
+cat(paste("Time points when correct:", correct, "\n"))
+cat(paste("Time points total:", total, "\n"))
+cat(paste("Ratio:", correct / total, "\n"))
+cat(paste("Lindy effect is correct ", signif((correct / total) * 100, 3), "% of the time\n", sep=""))
+cat("\n")
