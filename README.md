@@ -9,6 +9,14 @@ We test the accuracy of the Lindy Effect on the history of GNU/Linux distributio
 The source code of the experiment is here:
 [process.R](./process.R)
 
+Table of contents
+=================
+
+  * [Steps to reproduce](#steps-to-reproduce)
+  * [Results](#results)
+  * [Input Data Visualization](#input-data-visualization)
+  * [Results Visualization](#results-visualization)
+
 
 ## Steps to reproduce
 
