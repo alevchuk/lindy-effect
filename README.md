@@ -22,9 +22,8 @@ Table of contents
 ## Steps to reproduce
 
 ### Prerequisites
-1. [Get hardware that can run Linux](https://github.com/alevchuk/minibank/blob/master/README.md#model-4--node-at-home)
-2. [Install Debian 10 "buster"](https://github.com/alevchuk/minibank/blob/master/README.md#operating-system)
-3. [Install R](https://github.com/alevchuk/lindy-effect/blob/master/R/README.md)
+
+1. [Install R 3.6.1](https://github.com/alevchuk/lindy-effect/blob/master/R/README.md)
 
 ### Source data
 
