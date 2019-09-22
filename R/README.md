@@ -4,7 +4,7 @@ R is a statistical programming and graphing language.
 
 ## Building and installing
 
-Install in on Debian 10 "buster" like this.
+Install R on Debian 10 "buster" like this.
 
 ### Install prerequisites
 ```
