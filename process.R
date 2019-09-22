@@ -100,17 +100,21 @@ for (t in timePoints) {
 
 
 cat("\nYoungest survivors:\n")
-print(unique(experimentResults[
+youngestSurvivors <- unique(experimentResults[
       which(experimentResults$status == "youngest"),
       c("Type", "Name", "Parent", "Start", "Stop")
-      ]))
+      ])
+youngestSurvivors$totalAgeInDays <- (youngestSurvivors$Stop - youngestSurvivors$Start)
+print(youngestSurvivors)
 cat("\n\n")
 
 cat("\nOldest survivors:\n")
-print(unique(experimentResults[
+oldestSurvivors <- unique(experimentResults[
       which(experimentResults$status == "oldest"),
       c("Type", "Name", "Parent", "Start", "Stop")
-      ]))
+      ])
+oldestSurvivors$totalAgeInDays <- (oldestSurvivors$Stop - oldestSurvivors$Start)
+print(oldestSurvivors)
 cat("\n\n")
 
 
