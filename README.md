@@ -40,7 +40,8 @@ sudo su -l r
 
 Download script:
 ```
-cd ~/lindy-data
+mkdir ~/lindy-effect
+cd ~/lindy-effect
 curl https://raw.githubusercontent.com/alevchuk/lindy-effect/master/process.R > process.R
 chmod +x process.R
 ```
