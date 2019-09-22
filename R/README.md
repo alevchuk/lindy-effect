@@ -46,3 +46,10 @@ Add binary path export to the end of `~/.profile` like this:
 echo 'export PATH=$HOME/bin/bin:$PATH' >> ~/.profile
 source ~/.profile
 ```
+
+## To use R
+
+To use R, change into the R user account:
+```
+sudo su -l r
+```
