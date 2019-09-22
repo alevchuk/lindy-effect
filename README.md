@@ -53,3 +53,16 @@ Our input data has a beautiful visualization in the **Linux_distribution wikiped
 ![lindy-age-life-scatter-plot](results/lindy-age-life-scatter-plot-v4.png)
 
 ![lindy-age-life-scatter-plot-oy](results/lindy-age-life-scatter-plot-oy-v2.png)
+
+Using lindy effect to predict which Linux distro will live 2x of it's current age
+At each time point, we take the oldest repo among survivors and bet that it will live 2x of it's current age
+then we count the time points when we were correct and calculate what percentage of time we were correct.
+
+| Description | Value |
+| ----------- | ----- |
+| Time points when correct: | 98 |
+| Time points total: | 164 |
+| Ratio: | 0.597560975609756 |
+
+Lindy effect is correct 59.8% of the time
+
