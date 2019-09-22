@@ -33,10 +33,6 @@ No need to pre-download, the R script will download this file for you.
 
 ### Download and run the experiment
 
-Change into the R user account:
-```
-sudo su -l r
-```
 
 Download script:
 ```
