@@ -42,20 +42,10 @@ Run experiment:
 ./process.R
 ```
 
-## Visualization of the input data
+## Results
 
-Our input data has a beautiful visualization in the **Linux_distribution wikipedia article** https://en.wikipedia.org/wiki/Linux_distribution#History
-![Linux_Distribution_Timeline](https://upload.wikimedia.org/wikipedia/commons/1/1b/Linux_Distribution_Timeline.svg)
-
-
-# Results
-
-![lindy-age-life-scatter-plot](results/lindy-age-life-scatter-plot-v4.png)
-
-![lindy-age-life-scatter-plot-oy](results/lindy-age-life-scatter-plot-oy-v2.png)
-
-Using lindy effect to predict which Linux distro will live 2x of it's current age
-At each time point, we take the oldest repo among survivors and bet that it will live 2x of it's current age
+Using lindy effect to predict which Linux distro will live 2x of its current age
+At each time point, we take the oldest repo among survivors and bet that it will live 2x of its current age
 then we count the time points when we were correct and calculate what percentage of time we were correct.
 
 | Description | Value |
@@ -65,4 +55,17 @@ then we count the time points when we were correct and calculate what percentage
 | Ratio: | 0.597560975609756 |
 
 Lindy effect is correct 59.8% of the time
+
+
+## Input Data Visualization
+
+Our input data has a beautiful visualization in the **Linux_distribution wikipedia article** https://en.wikipedia.org/wiki/Linux_distribution#History
+![Linux_Distribution_Timeline](https://upload.wikimedia.org/wikipedia/commons/1/1b/Linux_Distribution_Timeline.svg)
+
+
+# Results Visualization
+
+![lindy-age-life-scatter-plot](results/lindy-age-life-scatter-plot-v4.png)
+
+![lindy-age-life-scatter-plot-oy](results/lindy-age-life-scatter-plot-oy-v2.png)
 
