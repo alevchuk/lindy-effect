@@ -2,6 +2,14 @@
 
 R is a statistical programming and graphing language.
 
+## Hawdware and operating system 
+
+R can run on pretty much any hardware and operating system. Here is what I use:
+
+1. [Get hardware that can run Linux](https://github.com/alevchuk/minibank/blob/master/README.md#model-4--node-at-home)
+2. [Install Debian 10 "buster"](https://github.com/alevchuk/minibank/blob/master/README.md#operating-system)
+
+
 ## Building and installing
 
 Install R on Debian 10 "buster" like this.
